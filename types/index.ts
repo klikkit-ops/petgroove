@@ -55,6 +55,6 @@ export const DANCE_TYPES: DanceType[] = [
 
 export const CREDIT_COSTS = {
   gen4_turbo: 400, // ~£3 per video
-  veo3.1_fast: 500, // ~£3 per video
+  'veo3.1_fast': 500, // ~£3 per video
 } as const;
 
