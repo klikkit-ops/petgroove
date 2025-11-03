@@ -127,7 +127,7 @@ export async function POST(request: NextRequest) {
             .eq('stripe_subscription_id', invoice.subscription as string)
             .single()
 
-          if (userData && invoice.lines.data[0]?.price.id === process.env.STRIPE_WEEKLY_TRIAL_PRICE_ID) {
+          if (userData && invoice.lines.data[0]?.price?.id === process.env.STRIPE_WEEKLY_TRIAL_PRICE_ID) {
             // Weekly subscription payment succeeded, add credits
             const credits = 1000
             await supabase.rpc('add_credits', {
