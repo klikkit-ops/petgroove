@@ -33,7 +33,7 @@ export default function Home() {
             Turn Your Pet Into a Dancing Star
           </h1>
           <p className="text-xl text-white/90 mb-8">
-            Transform your pet's photo into an amazing 8-second dancing video with AI.
+            Transform your pet&apos;s photo into an amazing 8-second dancing video with AI.
             Choose from 10 different dance styles and watch your pet come to life!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
